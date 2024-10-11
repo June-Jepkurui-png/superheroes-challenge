@@ -2,29 +2,33 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
 function Power() {
-  const [{ data: power, error, status }, setPower] = useState({
-    data: null,
-    error: null,
-    status: "pending",
-  });
   const { id } = useParams();
+  const [power, setPower] = useState(null);
+  const [error, setError] = useState(null);
+  const [status, setStatus] = useState("pending");
 
   useEffect(() => {
-    fetch(`/powers/${id}`).then((r) => {
-      if (r.ok) {
-        r.json().then((power) =>
-          setPower({ data: power, error: null, status: "resolved" })
-        );
-      } else {
-        r.json().then((err) =>
-          setPower({ data: null, error: err.error, status: "rejected" })
-        );
+    const fetchPower = async () => {
+      try {
+        const response = await fetch(`/powers/${id}`);
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(errorData.error);
+        }
+        const powerData = await response.json();
+        setPower(powerData);
+        setStatus("resolved");
+      } catch (err) {
+        setError(err.message);
+        setStatus("rejected");
       }
-    });
+    };
+
+    fetchPower();
   }, [id]);
 
   if (status === "pending") return <h1>Loading...</h1>;
-  if (status === "rejected") return <h1>Error: {error.error}</h1>;
+  if (status === "rejected") return <h1>Error: {error}</h1>;
 
   return (
     <section>
