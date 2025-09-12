@@ -27,7 +27,7 @@ pressing the `Import` button.
 Select `Upload Files`, navigate to this repo folder, and select
 `challenge-2-superheroes.postman_collection.json` as the file to import.
 
-## Setup 
+## Setup
 
 The instructions assume you changed into the `code-challenge` folder **prior**
 to opening the code editor.
