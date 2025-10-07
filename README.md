@@ -341,7 +341,7 @@ related to the new `HeroPower`:
 ```
 
 If the `HeroPower` is **not** created successfully, return the following JSON
-data, along with the appropriate HTTP status code 
+data, along with the appropriate HTTP status code
 
 ```json
 {
