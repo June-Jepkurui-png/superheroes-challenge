@@ -123,7 +123,7 @@ instantiate the `Api` class in server/app.py.
 
 ### GET /heroes
 
-Return JSON data in the format below:
+Return JSON data in the format below 
 
 ```json
 [
