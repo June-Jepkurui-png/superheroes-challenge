@@ -12,7 +12,7 @@ In this repo;
   contains a Postman collection of requests for testing each route you will
   implement.
 
-Depending on your preference, you can either check your API by
+Depending on your preference, you can either check your API,
 
 - Using Postman to make requests
 - Running `pytest -x` and seeing if your code passes the tests
