@@ -59,7 +59,7 @@ React code; the frontend code is available just so that you can test out the
 behavior of your API in a realistic settings.
 
 Your job is to build out the Flask API to add the functionality described in the
-deliverables below.
+deliverables below..
 
 ## Models
 
