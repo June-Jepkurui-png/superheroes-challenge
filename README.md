@@ -286,7 +286,7 @@ its description and return JSON data in the format below:
 }
 ```
 
-If the `Power` does not exist, return the following JSON data, along with the
+If the `Power` does not exist, return the following JSON data, along with the 
 appropriate HTTP status code:
 
 ```json
