@@ -97,7 +97,7 @@ python server/seed.py
 ```
 
 > If you aren't able to get the provided seed file working, you are welcome to
-> generate your own seed data to test the application.
+> generate your own seed data to test the applications
 
 ## Validations
 
