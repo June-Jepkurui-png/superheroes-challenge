@@ -14,7 +14,7 @@ In this repo;
 
 Depending on your preference, you can either check your API,
 
-- Using Postman to make requests
+- Using Postman make requests
 - Running `pytest -x` and seeing if your code passes the tests
 - Running the React application in the browser and interacting with the API via
   the frontend
