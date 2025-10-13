@@ -34,7 +34,7 @@ to opening the code editor.
 
 To download the dependencies for the frontend and backend, run:
 
-```console
+```console 
 pipenv install
 pipenv shell
 npm install --prefix client
