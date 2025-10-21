@@ -61,7 +61,7 @@ behavior of your API in a realistic settings.
 Your job is to build out the Flask API to add the functionality described in the
 deliverables below..
 
-## Models
+## Models 
 
 You will implement an API for the following data model:
 
