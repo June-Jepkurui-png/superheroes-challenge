@@ -5,7 +5,7 @@ superpowers
 
 In this repo;
 
-- There is a Flask application with some features built out 
+- There is a Flask application with some features built out. 
 - There is a fully built React frontend application.
 - There are tests included which you can run using `pytest -x`.
 - There is a file `challenge-2-superheroes.postman_collection.json` that
